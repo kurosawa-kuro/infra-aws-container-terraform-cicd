@@ -8,5 +8,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log("Server is up on 3000");
+    console.log("Server is up on 8080");
 });

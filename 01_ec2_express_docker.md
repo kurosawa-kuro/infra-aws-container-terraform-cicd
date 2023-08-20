@@ -28,7 +28,7 @@ sudo yum update -y
 
 sudo yum install git -y
 
-sudo amazon-linux-extras install docker -y
+sudo yum install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 ``` -->
@@ -38,23 +38,16 @@ sudo usermod -a -G docker ec2-user
 #### アプリディレクトリの初期化
 
 <!-- ```bash
-git clone 
+git clone https://github.com/kurosawa-kuro/infra-aws-container-terraform-cicd.git
 ``` -->
 
-#### サーバーファイルの作成
+#### docker起動
 
 <!-- ```bash
-const express = require("express");
-
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.listen(8080, () => {
-  console.log("listening");
-});
+cd infra-aws-container-terraform-cicd/ec2-nodejs-app
+docker build -t ec2-nodejs-app .
+docker images
+docker run -p 8080:8080 2c75bd04622c
 ``` -->
 
 ## 終了方法
