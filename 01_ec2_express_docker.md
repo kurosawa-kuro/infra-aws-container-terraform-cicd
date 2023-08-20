@@ -17,7 +17,7 @@
 
 ## インスタンスに接続
 <!-- ```bash
-ssh -i "training-Key.pem" ec2-user@10.0.4.205
+ssh -i "training-key.pem" ec2-user@ec2-35-77-106-245.ap-northeast-1.compute.amazonaws.com
 ``` -->
 
 ## ソフトウェア設定
