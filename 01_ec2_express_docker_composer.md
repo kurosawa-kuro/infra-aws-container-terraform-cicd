@@ -31,6 +31,9 @@ sudo yum install git -y
 sudo yum install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
+
+exit
+
 ``` -->
 
 <!-- ```bash
@@ -51,10 +54,8 @@ git clone https://github.com/kurosawa-kuro/infra-aws-container-terraform-cicd.gi
 #### docker起動
 
 <!-- ```bash
-cd infra-aws-container-terraform-cicd/ec2-nodejs-app
-docker build -t ec2-nodejs-app .
-docker images
-docker run -p 8080:8080 2c75bd04622c
+cd infra-aws-container-terraform-cicd/ec2-nodejs-app-compose/
+docker-compose up
 ``` -->
 
 ## 終了方法
