@@ -17,17 +17,13 @@
 
 ## インスタンスに接続
 <!-- ```bash
-ssh -i "training-key.pem" ec2-user@ec2-18-182-10-14.ap-northeast-1.compute.amazonaws.com
+ssh -i "training-Key.pem" ec2-user@10.0.4.205
 ``` -->
 
 ## ソフトウェア設定
 
 ### Node.jsのインストール
 <!-- ```bash
-sudo yum update -y
-
-sudo yum install git -y
-
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
 sudo yum install -y nodejs
 ``` -->
@@ -37,9 +33,11 @@ sudo yum install -y nodejs
 #### アプリディレクトリの初期化
 
 <!-- ```bash
-git clone https://github.com/kurosawa-kuro/infra-aws-container-terraform-cicd.git
-
-cd  infra-aws-container-terraform-cicd/ec2-nodejs-app
+mkdir app
+cd app
+npm init -y
+npm install express
+touch index.js
 ``` -->
 
 #### サーバーファイルの作成
